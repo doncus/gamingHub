@@ -14,6 +14,7 @@ export interface Game {
   // An array of objects where each object has a property platform of type Platform
   // due to the fetch results ...
   parent_platforms: { platform: Platform }[];
+  metacritic: number;
 }
 interface FetchGamesResonse {
   count: number;
