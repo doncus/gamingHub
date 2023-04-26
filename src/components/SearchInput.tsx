@@ -11,7 +11,11 @@ const SearchInput = ({ onSearch }: SearchInputProps) => {
   if (ref.current) onSearch(ref.current.value);
 
   return (
-    <form onSubmit={(event) => event.preventDefault()}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <InputGroup>
         <InputLeftElement children={<BsSearch />} />
         <Input
